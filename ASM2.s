@@ -4,6 +4,9 @@ write_digit:
     add rdi, 0x30
     push rdi
     mov rsi, rsp
+    mov rax, 1
+    mov rdx, 1
+    mov rdi, 1
     syscall
 
     pop rbp
