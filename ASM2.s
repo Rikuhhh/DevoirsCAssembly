@@ -1,3 +1,17 @@
+write_digit:
+    push rbp
+    mov rbp, rsp
+    add rdi, 0x30
+    push rdi
+    mov rsi, rsp
+    syscall
+
+    pop rbp
+    ret
+
+
+
+
 global main
 main:
     mov rdi, 9
